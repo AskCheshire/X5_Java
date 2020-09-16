@@ -1,8 +1,8 @@
 package home_work_3.animal;
 
 public class Animal {
-    protected String food;
-    protected String location;
+    private String food;
+    private String location;
     protected String name;
 
     public Animal(String food, String location) {

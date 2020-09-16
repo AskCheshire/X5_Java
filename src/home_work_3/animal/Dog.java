@@ -1,10 +1,11 @@
 package home_work_3.animal;
 
 public class Dog extends Animal {
-    private static final String name = "Пёс";
+    private String name;
 
-    public Dog() {
-        super("косточку", "на диване");
+    public Dog(String name, String food, String location) {
+        super(food, location);
+        this.name = name;
     }
 
     @Override
@@ -14,7 +15,7 @@ public class Dog extends Animal {
 
     @Override
     public void eat() {
-        System.out.println(name + " кушает " + food);
+        System.out.println(name + " кушает " + getFood());
     }
 
     public String getName() {
